@@ -1,0 +1,1 @@
+''' Faça um programa, utilizando while , que permite ao usuário fazer contas de adição enquanto quiser.'''
