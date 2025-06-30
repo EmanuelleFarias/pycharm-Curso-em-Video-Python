@@ -1,4 +1,4 @@
-'''Exercício Python 70: Crie um programa que leia o nome e o preço de vários produtos.
+''' Crie um programa que leia o nome e o preço de vários produtos.
 O programa deverá perguntar se o usuário vai continuar ou não. No final, mostre:
 A) qual é o total gasto na compra.
 

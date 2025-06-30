@@ -1,3 +1,7 @@
+
+''' Faça um programa que leia um número qualquer e mostre
+o seu fatorial '''
+
 num = int(input('Digite um número: ')) # 5
 resultado = 1
 cont = 1
