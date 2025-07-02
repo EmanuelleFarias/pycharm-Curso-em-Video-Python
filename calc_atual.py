@@ -23,7 +23,6 @@ Pantalla.grid(row = 0, column = 0, columnspan = 4, padx = 20, pady = 20) #padx e
 #botoes
 color_boton = 'bisque'
 ancho_boton = 10
-ancho_boton2 = 20
 alto_boton = 3
 operador = '' #parte 2 do video
 
