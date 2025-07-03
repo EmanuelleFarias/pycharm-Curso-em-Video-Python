@@ -12,10 +12,24 @@ while numero != 999:
 print('Você digitou {} números e a soma entre eles foi {}.'.format(cont, soma))
 
 
-
-num, cont, sum=0,0,0 # == num=0 ↳ cont=0 ↳ sum=0
+num = int(input('Digite un número entero ("999" para terminar): '))
+cont, sum=0,0 # == num=0 ↳ cont=0 ↳ sum=0
 while num !=999:
-  sum+=num
-  cont+=1
-  num = int(input('Digite un número entero ("999" para terminar): '))
-print(cont-1, sum)
+      sum+=num
+      cont+=1
+      num = int(input('Digite un número entero ("999" para terminar): '))
+print(cont, sum)
+
+print('Digite números inteiros (999 para parar):')
+
+cont = 0
+soma = 0
+
+while True:
+    numero = int(input('→ '))
+    if numero == 999:
+        break
+    cont += 1
+    soma += numero
+
+print(f'Você digitou {cont} números e a soma entre eles foi {soma}.')
