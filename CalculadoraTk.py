@@ -137,11 +137,11 @@ janela = Tk()
 janela.title("Calculadora 🔢")
 janela.geometry("400x550")
 janela.resizable(False, False)
-janela.configure(background='dark seagreen')
+janela.configure(background='bisque')
 
 # Criar tela
 texto = StringVar()
-tela = Entry(janela, textvariable=texto, font=('Calibri', 24, 'bold'), bd=10, background='light goldenrod2', relief='sunken', justify='right')
+tela = Entry(janela, textvariable=texto, font=('Calibri', 24, 'bold'), bd=10, background='paleturquoise2', relief='sunken', justify='right')
 tela.grid(row=0, column=0, columnspan=4, padx=10, pady=20, sticky='nsew')
 
 
