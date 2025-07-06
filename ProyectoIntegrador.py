@@ -16,10 +16,11 @@ similar a la anteriormente mensionada.
 
 Salir : el programa finaliza y se cierra pidiendonos una confirmacion'''
 from random import randint
+import os
 tickets = {}
 
-#def limpiar_pantalla():
-    #os.system('cls' if os.name == 'nt' else 'clear')
+def limpiar_pantalla():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def mostrar_ticket(ticket):
     print()
@@ -37,9 +38,9 @@ def mostrar_ticket(ticket):
 
 def alta_ticket():
     while True:
-        #limpiar_pantalla()
+        limpiar_pantalla()
         print('—'*60)
-        print('Ingrese los datos para generar un nuevo ticket')
+        print('{:^60}'.format('Ingrese los datos para generar un nuevo ticket'))
         print('—'*60)
         nombre = str(input('Ingrese su Nombre: '))
         sector = str(input('Ingrese su Sector: '))
@@ -71,7 +72,7 @@ def alta_ticket():
 
 def leer_ticket():
     while True:
-        #limpiar_pantalla()
+        limpiar_pantalla()
         print('—' * 60)
         print('{:^60}'.format('🎫 Lectura de Ticket'))
         print('—' * 60)
@@ -98,7 +99,7 @@ def salir():
 
 
 while True:
-    #limpiar_pantalla()
+    limpiar_pantalla()
     print('==' * 30)
     print('{:^60}'.format(' 🎫¡Hola! Bienvenido al Sistema de Tickets 🎫' ))
     print('==' * 30)
