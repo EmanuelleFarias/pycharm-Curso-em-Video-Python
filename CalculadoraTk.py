@@ -130,7 +130,7 @@ ventana.mainloop()
 
 from tkinter import *
 from math import *
-from emoji import emojize
+#from emoji import emojize
 
 # Criar janela principal
 janela = Tk()

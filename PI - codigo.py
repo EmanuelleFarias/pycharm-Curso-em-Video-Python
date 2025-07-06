@@ -15,7 +15,7 @@ def mostrar_ticket(ticket):
     print(f'║{" TICKET DE SOPORTE ":^62}║')
     print(f'╚{"═"*62}╝')
     print(f'║  Nombre: {ticket["nombre"]:<52}║')
-    print(f'║  Nº Ticket: {ticket["numero"]:<50}║')
+    print(f'║  Nº Ticket: {ticket["numero"]:<49}║')
     print(f'║  Sector: {ticket["sector"]:<52}║')
     print(f'║  Asunto: {ticket["asunto"]:<52}║')
     print(f'║{"":<62}║')
