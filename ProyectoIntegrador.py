@@ -1,20 +1,4 @@
-'''Se ha pedido crear un modulo para generar ticktes que contenga lo siguiente:
 
-Un menu con 3 opciones - Alta ticket , Leer ticket , Salir.
-
-Alta ticket : nombre, sector,asunto, problemaAl terminar de ingresar
-el ticket se debera mostrar por pantalla el mismo,sumandose el numero
-de ticket (que sera un numero random entre 1000,9999) y una leyenda que
-pida acordarse del numeroun menu que nos pregunte si deseamos crear otro
-ticket, en caso de ser noque nos regrese al menu principal, de lo contrario
-que nos regrese a lapantalla de alta.
-
-leer ticet: numero ticketal ingresar el
-numero nos mostrara por pantalla el ticket almacenadodebajo del mismo aparece
-una leyanda que nos preguntara si deseamos leerotro ticket, teniendo la funcionalidad
-similar a la anteriormente mensionada.
-
-Salir : el programa finaliza y se cierra pidiendonos una confirmacion'''
 from random import randint
 import os
 tickets = {}
@@ -32,7 +16,7 @@ def mostrar_ticket(ticket):
    #Asunto: {ticket['asunto']}
 
     Mensaje: {ticket['mensaje']}
-      # ''')
+       ''')
     print(f'╚{"═" * 58}╝')
 
 
@@ -101,7 +85,7 @@ def salir():
 while True:
     limpiar_pantalla()
     print('==' * 30)
-    print('{:^60}'.format(' 🎫¡Hola! Bienvenido al Sistema de Tickets 🎫' ))
+    print('{:^60}'.format('🎫 ¡Hola! Bienvenido al Sistema de Tickets 🎫' ))
     print('==' * 30)
     print(''' Seleccione una opción:
 
