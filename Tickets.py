@@ -81,28 +81,30 @@ def salir():
         confirmacion = input('Ingrese S para Sí o N para No: ').strip().lower()
     return confirmacion == 's'
 
+def menu_principal():
+    while True:
+        limpiar_pantalla()
+        print('==' * 30)
+        print('{:^60}'.format('🎫 ¡Hola! Bienvenido al Sistema de Tickets 🎫' ))
+        print('==' * 30)
+        print(''' Seleccione una opción:
+    
+    [1] Generar un nuevo ticket
+    [2] Leer un ticket
+    [3] Salir 
+        ''')
 
-while True:
-    limpiar_pantalla()
-    print('==' * 30)
-    print('{:^60}'.format('🎫 ¡Hola! Bienvenido al Sistema de Tickets 🎫' ))
-    print('==' * 30)
-    print(''' Seleccione una opción:
+        opcion = int(input('Opción seleccionada: '))
+        if opcion == 1:
+            alta_ticket()
+        elif opcion == 2:
+            leer_ticket()
+        else:
+            salir()
+            print('—' * 60)
+            print('{:^60}'.format('🔴 Programa Finalizado. ¡Hasta luego!'))
+            print('—' * 60)
+            print()
 
-[1] Generar un nuevo ticket
-[2] Leer un ticket
-[3] Salir 
-    ''')
-
-    opcion = int(input('Opción seleccionada: '))
-    if opcion == 1:
-        alta_ticket()
-    elif opcion == 2:
-        leer_ticket()
-    else:
-        salir()
-        print('—' * 60)
-        print('{:^60}'.format('🔴 Programa Finalizado. ¡Hasta luego!'))
-        print('—' * 60)
-        print()
-
+if __name__ == "__main__":
+    menu_principal()
