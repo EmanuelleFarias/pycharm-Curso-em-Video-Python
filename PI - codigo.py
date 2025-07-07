@@ -1,4 +1,113 @@
+import json
 import random
+import os
+
+ARQUIVO = "tickets.json"
+
+# Carregar tickets salvos
+def carregar_tickets():
+    if os.path.exists(ARQUIVO):
+        with open(ARQUIVO, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+# Salvar tickets
+def salvar_tickets(tickets):
+    with open(ARQUIVO, "w", encoding="utf-8") as f:
+        json.dump(tickets, f, indent=4, ensure_ascii=False)
+
+# Mostrar ticket formatado
+def exibir_ticket(ticket):
+    print("+" + "-"*60 + "+")
+    print(f"| Nome    : {ticket['nome']:<48}|")
+    print(f"| Setor   : {ticket['setor']:<48}|")
+    print(f"| Assunto : {ticket['assunto']:<48}|")
+    print(f"| Nº Ticket: {ticket['numero']:<47}|")
+    print("| Mensagem:".ljust(61) + "|")
+    mensagem = ticket["mensagem"]
+    linhas = [mensagem[i:i+56] for i in range(0, len(mensagem), 56)]
+    for linha in linhas:
+        print(f"|   {linha:<56}|")
+    print("+" + "-"*60 + "+")
+    print("🔔 Guarde o número do seu ticket.")
+
+# Criar ticket
+def alta_ticket(tickets):
+    while True:
+        print("\n📨 Gerar novo ticket")
+        nome = input("Nome: ")
+        setor = input("Setor: ")
+        assunto = input("Assunto: ")
+        mensagem = input("Mensagem: ")
+        numero = str(random.randint(1000, 9999))
+
+        ticket = {
+            "nome": nome,
+            "setor": setor,
+            "assunto": assunto,
+            "mensagem": mensagem,
+            "numero": numero
+        }
+
+        tickets[numero] = ticket
+        salvar_tickets(tickets)
+        print("\n🧾 Ticket criado com sucesso!")
+        exibir_ticket(ticket)
+
+        novo = input("\nDeseja criar outro ticket? (S/N): ").strip().lower()
+        if novo != "s":
+            break
+
+# Ler ticket
+def ler_ticket(tickets):
+    while True:
+        print("\n🔍 Ler ticket existente")
+        numero = input("Digite o número do ticket: ").strip()
+        ticket = tickets.get(numero)
+        if ticket:
+            exibir_ticket(ticket)
+        else:
+            print("❌ Ticket não encontrado.")
+        outro = input("\nDeseja ler outro ticket? (S/N): ").strip().lower()
+        if outro != "s":
+            break
+
+# Menu principal
+def menu():
+    tickets = carregar_tickets()
+    while True:
+        print("\n" + "="*60)
+        print("{:^60}".format("🎫 SISTEMA DE TICKETS"))
+        print("="*60)
+        print("1 - Gerar novo ticket")
+        print("2 - Ler ticket existente")
+        print("3 - Sair")
+        opcao = input("Selecione uma opção: ")
+
+        if opcao == "1":
+            alta_ticket(tickets)
+        elif opcao == "2":
+            ler_ticket(tickets)
+        elif opcao == "3":
+            confirmar = input("Deseja mesmo sair? (S/N): ").strip().lower()
+            if confirmar == "s":
+                print("👋 Encerrando o sistema...")
+                break
+        else:
+            print("⚠️ Opção inválida. Tente novamente.")
+
+# Execução
+if __name__ == "__main__":
+    menu()
+
+
+
+
+
+
+
+
+'''import random
 import os
 import textwrap
 
@@ -83,11 +192,11 @@ def menu_principal():
         print('=='*30)
         print('{:^60}'.format('🎫 SISTEMA DE GESTIÓN DE TICKETS'))
         print('=='*30)
-        print('''Seleccione una opción:
+        print('''#Seleccione una opción:
 
-[1] Alta ticket
-[2] Leer ticket
-[3] Salir
+#[1] Alta ticket
+#[2] Leer ticket
+#[3] Salir
 ''')
         opcion = input('Opción seleccionada: ').strip()
         if opcion == '1':
@@ -103,4 +212,4 @@ def menu_principal():
             input('Presione Enter para continuar...')
 
 if __name__ == "__main__":
-    menu_principal()
+    menu_principal()'''

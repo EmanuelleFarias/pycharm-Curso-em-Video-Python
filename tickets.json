@@ -1,0 +1,51 @@
+{
+    "6884": {
+        "nome": "mel",
+        "setor": "ti",
+        "assunto": "pc",
+        "mensagem": "pc no enciendee",
+        "numero": "6884"
+    },
+    "3394": {
+        "nome": "paul",
+        "setor": "ti",
+        "assunto": "pc",
+        "mensagem": "c np enciende",
+        "numero": "3394"
+    },
+    "5252": {
+        "nome": "joao",
+        "setor": "ti",
+        "assunto": "pc",
+        "mensagem": "pc no enciende",
+        "numero": "5252"
+    },
+    "9232": {
+        "numero": "9232",
+        "nombre": "mel",
+        "sector": "ti",
+        "asunto": "pc",
+        "mensaje": "pc no enciende"
+    },
+    "5063": {
+        "numero": "5063",
+        "nombre": "paul",
+        "sector": "ti",
+        "asunto": "pc",
+        "mensaje": "pc enciende"
+    },
+    "8300": {
+        "numero": "8300",
+        "nombre": "joao",
+        "sector": "dj",
+        "asunto": "pc",
+        "mensaje": "pcpc"
+    },
+    "6239": {
+        "numero": "6239",
+        "nombre": "maria",
+        "sector": "ti",
+        "asunto": "pc ",
+        "mensaje": "pc"
+    }
+}
