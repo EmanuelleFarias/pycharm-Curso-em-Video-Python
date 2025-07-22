@@ -1,0 +1,48 @@
+lanche = ('hamburguer', 'suco', 'pizza', 'pudim') #pode ser com ou sem parenteses
+#lanche[1] = ('refrigerante') #vai dar erro pq não pode mudar a tupla
+print(lanche)
+print(lanche[1])
+print(lanche[3])
+print(lanche[-2])
+print(lanche[1:3])
+print(lanche[2:])
+print(lanche[:2])
+print(lanche[-2:])
+print(len(lanche))
+print('----- com FOR -----')
+for comida in lanche:
+    print(f'Eu vou comer {comida}')
+print('Comi pra caramba!')
+print('----- FOR com RANGE -----')
+for cont in range(0, len(lanche)):
+    print(lanche[cont])
+print('Comi pra caramba!')
+print('----- FOR com RANGE e posição -----')
+for cont in range(0, len(lanche)):
+    print(f'Eu vou comer {lanche[cont]}')
+print('Comi pra caramba!')
+print('----- FOR com ENUMERATE -----')
+for pos, comida in enumerate(lanche):
+    print(f'Eu vou comer {comida} na posição {pos}')
+print('----- SORTED -----')
+print(sorted(lanche)) #em ordem (transforma em lista pra ordenar)
+print('----- NOVAS TUPLAS -----')
+a = (2,5,4)
+b = (5,8,1,2)
+c = a + b #concatena
+print(a)
+print(b)
+print('----- CONCATENADA -----')
+print(c)
+print('----- LEN -----')
+print(len(c))
+print('----- CONTANDO ELEMENTOS REPETIDOS -----')
+print(c.count(5)) #conta elementos repetidos na tupla
+print('----- INDEX dizendo a posição -----')
+print(c.index(2))
+print('----- INDEX dizendo a posição a partir de um ponto (qdo os itens se repetem -----')
+print(c.index(2,1))
+
+pessoa = ('Mel', 39, 'F', 55)
+del(pessoa) #pra apagar a tupla inteira. não é possível apagar um elemento
+print(pessoa)
