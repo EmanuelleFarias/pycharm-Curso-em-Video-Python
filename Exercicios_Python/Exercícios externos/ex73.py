@@ -31,3 +31,5 @@ print('⏔' *45)
 print(f'Times em ordem alfabética:\n {sorted(times)}')
 print('⏔' *45)
 print(f"O Palmeiras está na {times.index('Palmeiras')+1}ª posição.")
+
+
