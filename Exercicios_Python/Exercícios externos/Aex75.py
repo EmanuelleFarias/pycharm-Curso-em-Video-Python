@@ -31,5 +31,3 @@ for v in tup_num:
         print(f'{v}',end=' ')
 print('')
 
-
-

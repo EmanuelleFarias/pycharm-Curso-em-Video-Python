@@ -17,3 +17,5 @@ for n in range(0, len(num_ext)):
     print(f'O número digitado foi: {num_ext[num]}')
     break
 
+
+
