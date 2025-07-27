@@ -9,7 +9,7 @@ for i in range(1, 10):
     if num % i == 0:
         div.append(i)
         cont+= 1
-    tupla = tuple(div)
+
 print(f'{cont} números: ')
-print((', '.join(str(i) for i in tupla)), ".\nLogo, NÃO É UM NÚMERO PRIMO."if cont > 2 else f".\nLogo, É UM NÚMERO PRIMO.")
+print((', '.join(str(i) for i in div)), ".\nLogo, NÃO É UM NÚMERO PRIMO."if cont > 2 else f".\nLogo, É UM NÚMERO PRIMO.")
 
