@@ -11,7 +11,7 @@ while True:
         print(f'{n}',  end=' x ' if n > 1 else ' = ')
     print(fat)
 
-    mais = str(input('Deseja calcular o fatorial de outro número(S/N)? ')).strip().lower()
+    mais = str(input('\nDeseja calcular o fatorial de outro número(S/N)? ')).strip().lower()
     while mais not in 'sn':
         print('Opção inválida. Digite S para Sim e N para Não.')
         mais = str(input('Deseja calcular o fatorial de outro número(S/N)? ')).strip().lower()

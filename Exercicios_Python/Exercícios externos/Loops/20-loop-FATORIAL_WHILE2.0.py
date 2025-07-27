@@ -10,7 +10,7 @@ while True:
         num -= 1
     print(f)
 
-    mais = str(input('Deseja calcular o fatorial de outro número(S/N)? ')).strip().lower()
+    mais = str(input('\nDeseja calcular o fatorial de outro número(S/N)? ')).strip().lower()
     while mais not in 'sn':
         print('Opção inválida. Digite S para Sim e N para Não.')
         mais = str(input('Deseja calcular o fatorial de outro número(S/N)? ')).strip().lower()
