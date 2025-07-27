@@ -48,3 +48,6 @@ from html import unescape
 # sinal de ↓ ← ↑ → ↔ ↕ ↖ ↗ ↘ ↙ ↩ ↪ ↲ ↳para copiar
 
 # coisas com listas no exercício 70
+
+#pra unir quando printo os itens de uma lista
+#-> print(', '.join(str(i) for i in seq)) /// usei na aba 15-loop

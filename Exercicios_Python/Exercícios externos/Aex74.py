@@ -14,7 +14,7 @@ for n in range(0,5):
     lista.append(randint(0,100))
 tupla = tuple(lista)
 print('Os números sorteados foram:', end=' ')
-for n in tupla:
-   print(f'{n}', end=' ')
+
+print(', '.join(str(n) for n in tupla))
 print(f'\nO maior número é {max(tupla)}.')
 print(f'O menor número é {min(tupla)}.')

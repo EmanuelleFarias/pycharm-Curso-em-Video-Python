@@ -5,7 +5,7 @@ while True:
     nome = str(input('Informe seu nome: ')).strip().lower().split()
     senha = str(input('Digite sua senha: ')).strip().lower()
 
-    if any(nome in senha for nome in nome):
+    if any(nome in senha for nome in nome): # SE ALGUM NOME TIVER NA SENHA NO INTERVALO DOS NOMES (CASO INFORME O NOME 'MARIA JOSE', POR EXEMPLO
         print('\nSenha inválida. O nome não pode estar contido na senha.\n')
     else:
         print('Senha validada com sucesso.')

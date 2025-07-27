@@ -6,8 +6,7 @@ populacao_maior = int(input('Informe a maior população: '))
 taxa_menor = float(input('Taxa da menor população: '))
 taxa_maior = float(input('Taxa da maior população: '))
 
-'''cresc_1 = populacao_1 * taxa_1/100
-cresc_2 = populacao_2 * taxa_2/100'''
+
 anos = 0
 
 while populacao_menor < populacao_maior:
@@ -15,6 +14,6 @@ while populacao_menor < populacao_maior:
     populacao_maior += populacao_maior*taxa_maior/100
     anos += 1
 
-print(f'A quantidade de anos é {anos}')
+print(f'Em {anos} anos as populações vão se igualar.')
 print(populacao_menor)
 print(populacao_maior)
