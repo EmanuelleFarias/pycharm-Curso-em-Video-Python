@@ -9,6 +9,7 @@ palavras = ('palanka', 'kikita', 'negro', 'jojo', 'pequeneas', 'vitorias')
 
 for palavra in palavras:
     print(f'\nAs vogais da palavra {palavra.upper()} são: ', end='')
-    for letras in palavra:
+    '''for letras in palavra:
         if letras in 'aeiou':
-            print(letras, end=' ')
+            print(letras, end=' ')'''
+    print(', '.join (letras for letras in palavra if letras in 'aeiou'))

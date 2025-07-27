@@ -49,5 +49,8 @@ from html import unescape
 
 # coisas com listas no exercício 70
 
-#pra unir quando printo os itens de uma lista
-#-> print(', '.join(str(i) for i in seq)) /// usei na aba 15-loop
+'''pra unir quando printo os itens de uma lista
+-> print(', '.join(str(i) for i in seq)) /// usei na aba 15-loop'''
+
+'''quando já é string -> 
+print(', '.join (letras for letras in palavra if letras in 'aeiou'))//usei no Aex74 - exercicios externos'''
