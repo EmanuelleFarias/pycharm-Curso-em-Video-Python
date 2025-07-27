@@ -26,8 +26,10 @@ else:
     print('⫸ O número 3 não foi digitado nenhuma vez.')
 
 print(f'⫸Foram digitados os seguintes números pares:', end=' ')
-for v in tup_num:
+'''for v in tup_num:
     if v % 2 == 0:
-        print(f'{v}',end=' ')
+        print(f'{v}',end=' ')'''
+print(', '.join(str(v) for v in tup_num if v % 2 == 0))
+
 print('')
 
