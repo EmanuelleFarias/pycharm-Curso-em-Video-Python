@@ -19,5 +19,5 @@ print('')
 p = 1.99
 
 for qtde in range(1, 51):
-    preco = round((qtde * p),2)
+    preco = round(qtde * p, 2)
     print(f'{str(qtde) + " ":•<50} R${preco:>7.2f}')
