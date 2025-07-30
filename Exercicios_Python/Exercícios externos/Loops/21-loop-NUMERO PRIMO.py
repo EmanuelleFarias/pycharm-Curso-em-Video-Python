@@ -6,7 +6,7 @@ div = []
 cont = 0
 
 print(f"\n{num} é divisível por ele mesmo e mais ", end='')
-for i in range(1, 10):
+for i in range(1, num + 1):
     if num % i == 0:
         div.append(i)
         cont+= 1
