@@ -26,7 +26,8 @@ O final da leitura de dados se dará com a entrada de um salário negativo. (Use
 
 5. Construir um algoritmo que calcule a média aritmética de vários valores inteiros positivos, lidos externamente. O final da leitura acontecerá quando for lido um valor negativo.
 
-6. Em uma eleição presidencial existem quatro candidatos. Os votos são informados através de códigos. Os dados utilizados para a contagem dos votos obedecem à seguinte codificação:
+6. Em uma eleição presidencial existem quatro candidatos. Os votos são informados através de códigos.
+Os dados utilizados para a contagem dos votos obedecem à seguinte codificação:
 
 - 1,2,3,4 = voto para os respectivos candidatos;
 
