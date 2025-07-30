@@ -45,13 +45,19 @@ Elabore um algoritmo que leia o código do candidado em um voto. Calcule e escre
 
 Como finalizador do conjunto de votos, tem-se o valor 0.
 
-7. Escreva um algoritmo que calcule a média aritmética das 3 notas dos alunos de uma classe. O algoritmo deverá ler, além das notas, o código do aluno e deverá ser encerrado quando o código for igual a zero.
+7. Escreva um algoritmo que calcule a média aritmética das 3 notas dos alunos de uma classe.
+O algoritmo deverá ler, além das notas, o código do aluno e deverá ser encerrado quando o código for igual a zero.
 
-8. Escreva um algoritmo que calcule a média dos números digitados pelo usuário, se eles forem pares. Termine a leitura se o usuário digitar zero (0).
+8. Escreva um algoritmo que calcule a média dos números digitados pelo usuário, se eles forem pares.
+Termine a leitura se o usuário digitar zero (0).
 
 9. Escreva um algoritmo que leia 50 valores e encontre o maior e o menor deles. Mostre o resultado.
 
-10. Escreva um algoritmo que leia o código de um aluno e suas três notas. Calcule a média ponderada do aluno, considerando que o peso para a maior nota seja 4 e para as duas restantes, 3. Mostre o código do aluno, suas três notas, a média calculada e uma mensagem "APROVADO" se a média for maior ou igual a 5 e "REPROVADO" se a média for menor que 5. Repita a operação até que o código lido seja negativo.
+10. Escreva um algoritmo que leia o código de um aluno e suas três notas.
+Calcule a média ponderada do aluno, considerando que o peso para a maior nota seja
+4 e para as duas restantes, 3. Mostre o código do aluno, suas três notas, a média
+calculada e uma mensagem "APROVADO" se a média for maior ou igual a 5 e "REPROVADO"
+se a média for menor que 5. Repita a operação até que o código lido seja negativo.
 
 11. Escreva um algoritmo que leia um número n (número de termos de uma progressão aritmética), a1 ( o primeiro termo da progressão) e r (a razão da progressão) e escreva os n termos desta progressão, bem como a soma dos elementos.
 

@@ -20,13 +20,7 @@ Como finalizador do conjunto de votos, tem-se o valor 0.'''
 
 
 lista_votos = []
-total_jo = 0
-total_ze = 0
-total_lu = 0
-total_hu = 0
-total_nu = 0
-total_br = 0
-total = 0
+
 while True:
     print('⁀' * 43)
     print(f"{'PROGRAMINHA DE VOTOS':^60}")
@@ -41,38 +35,25 @@ while True:
         [6] Branco''')
 
     voto = int(input('\nEscolha seu candidato (para finalizar digite 0): '))
+    print('Voto registrado.')
     if voto == 0:
         print('Programa finalizado.')
         break
 
     lista_votos.append(voto)
-    if voto == 1:
-        total_jo += 1
-        total += 1
-    elif voto == 2:
-        total_ze += 1
-        total += 1
-    elif voto == 3:
-        total_lu += 1
-        total += 1
-    elif voto == 4:
-        total_hu += 1
-        total += 1
-    elif voto == 5:
-        total_nu += 1
-        total += 1
-    else:
-        total_br += 1
-        total += 1
+
+
 print('--'*30)
 print(f"{'RESULTADO DA VOTAÇÃO':^60}")
 print('--'*30)
-print(f"Joãozinho: {total_jo} voto(s)")
-print(f"Zezinho: {total_ze} voto(s)")
-print(f"Luisinho: {total_lu} voto(s)")
-print(f"Huguinho: {total_hu} voto(s)")
-print(f"Nulo: {total_nu} voto(s)")
-print(f"Branco: {total_br} voto(s)")
-print(f"Total de votos: {total}.")
+print(f"Joãozinho: {lista_votos.count(1)} voto(s)")
+print(f"Zezinho: {lista_votos.count(2)} voto(s)")
+print(f"Luisinho: {lista_votos.count(3)} voto(s)")
+print(f"Huguinho: {lista_votos.count(4)} voto(s)")
+print(f"Nulo: {lista_votos.count(5)} voto(s)")
+print(f"Branco: {lista_votos.count(6)} voto(s)")
+print(f"Total de votos: {len(lista_votos)}.")
+
+
 
 
